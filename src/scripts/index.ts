@@ -16,10 +16,6 @@ app.use("/", indexRouter);
 app.use("/add", addRouter);
 app.use("/list", listRouter);
 
-const server = require("http").Server(app);
-// var io = require("socket.io")(server, {});
-server.listen(3000, "0.0.0.0");
-
-// app.listen(PORT, "0.0.0.0", () => {
-// 	console.log(`Running on ${PORT} from ${"0.0.0.0"}`);
-// });
+app.listen(PORT, () => {
+	console.log(`Server is runing on ${PORT} port`);
+});

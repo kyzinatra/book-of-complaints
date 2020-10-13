@@ -5,7 +5,6 @@ const router = Router();
 router.get("/", (req, res) => {
 	res.status(200);
 	DataBase.get().then(result => {
-		console.log(result);
 		res.render("list", { result });
 	});
 });
