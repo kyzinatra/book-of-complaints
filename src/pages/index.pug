@@ -1,9 +1,29 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="./style/main.css")
-    title Книга Жалоб И Предложений
-  body
-    p Книга жалоб и предложений специально для #{name}
+include modules/head
+body
+  nav
+    .nav-wrapper.teal.lighten-2
+      a.brand-logo KZ's <i class="large material-icons right">book</i>
+      a.sidenav-trigger(data-target="mobile-slide") <i class="large material-icons right">menu</i>
+      ul.right.hide-on-med-and-down
+        li: a.link(href="https://vk.com/kyzinatr") Уйти с сайта
+        li: a.link(href="https://rt.pornhub.com") Свалить поскорее
+        li: a(onclick="M.toast({html: 'Ваша консультация!'})").link Получить консультацию
+  ul#mobile-slide.sidenav
+    li: a.link(href="https://vk.com/kyzinatr") Уйти с сайта
+    li: a.link(href="https://rt.pornhub.com") Свалить поскорее
+    li: a(onclick="M.toast({html: 'Ваша консультация!'})").link Получить консультацию
+
+  form(action="/add", method="post").form
+    .input-field.form__input
+      input(id="name" name="name" type="text" value=`${name}`)
+      label(for="name") Ваше имя
+    .input-field.form__input
+      input(id="reason" name="reason" type="text" value=`${reason}`)
+      label(for="reason") По какому поводу доебаться?
+    .input-field.from__text-area
+      i.material-icons.prefix mode_edit
+      textarea(id="content"  name="content" class="materialize-textarea")
+      label(for="content") Распишите подробнее
+    button.form__btn.btn.waves-effect.waves-light(type="submit" name="action") ОТПРАВИТЬ ПРЕДЪЯВУ <i class="material-icons right">send</i>
+
+  include modules/scripts

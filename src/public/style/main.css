@@ -1,3 +1,45 @@
-body {
-	background-color: #fff;
+.form {
+	text-align: center;
+	margin: auto;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+.form__input {
+	width: 40%;
+}
+.nav-wrapper {
+	padding: 0 2rem;
+}
+.form__btn {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.link {
+	text-transform: uppercase;
+}
+.from__text-area {
+	width: 100%;
+}
+
+@media (max-width: 847px) {
+	.form {
+		width: 90%;
+	}
+}
+@media (max-width: 574px) {
+	.form__input {
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.from__text-area {
+		margin-top: 2rem;
+	}
+	.nav-wrapper {
+		padding: 0;
+	}
 }
