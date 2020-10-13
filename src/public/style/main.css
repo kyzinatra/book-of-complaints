@@ -43,3 +43,10 @@
 		padding: 0;
 	}
 }
+
+.cntr {
+	text-align: center;
+}
+.card .card-content .card-p {
+	margin-top: 2rem;
+}

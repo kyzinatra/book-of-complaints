@@ -13,7 +13,7 @@ body
     li: a.link(href="https://rt.pornhub.com") Свалить поскорее
     li: a(onclick="M.toast({html: 'Ваша консультация!'})").link Получить консультацию
 
-  form(action="/add", method="post").form
+  form(action=`/add`, method="POST").form
     .input-field.form__input
       input(id="name" name="name" type="text" value=`${name}`)
       label(for="name") Ваше имя
