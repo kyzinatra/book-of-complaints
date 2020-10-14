@@ -30,5 +30,5 @@ npm install
 npm run dev
 ```
 
-Server will open in localhost:PORT
-You can see port in console (3001 by default)
+The server will open on localhost:PORT
+You can see the port in the console (default 3001)
