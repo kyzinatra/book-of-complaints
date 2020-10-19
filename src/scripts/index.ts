@@ -5,7 +5,7 @@ import { addRouter } from "../routes/add";
 import { listRouter } from "../routes/list";
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 80;
 
 app.set("view engine", "pug");
 app.set("views", "src/pages");
