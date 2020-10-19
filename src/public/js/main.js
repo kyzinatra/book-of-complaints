@@ -13,10 +13,3 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Tabs.init(elems, {});
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-   const link = document.querySelectorAll('#top_link');
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.scrollTo = 0;
-  })
-});
