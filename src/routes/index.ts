@@ -1,7 +1,9 @@
 import { Router } from "express";
 import { IInfo } from "../types/interfaces";
 const router = Router();
-
+router.get("/", (req, res) => {
+	res.redirect("/home");
+});
 router.get("/home", (req, res) => {
 	res.status(200);
 	const info: any = req.query.info || "";
