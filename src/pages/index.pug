@@ -7,12 +7,31 @@ body
       ul.right.hide-on-med-and-down
         li: a.link(href="https://vk.com/kyzinatr") Уйти с сайта
         li: a.link(href="https://rt.pornhub.com") Свалить поскорее
+        li
+          a.link(href="#" class='dropdown-trigger', data-target='triggerLeave1') Другие варианты
+          ul#triggerLeave1.dropdown-content
+            li: a(href="https://rt.pornhub.com") Default
+            li: a(href="https://checkporno.com") На любителя
+            li.divider(tabindex="-1")
+            li: a(href="http://gayporka.top/home/") Совсем на любителя
+            li.divider(tabindex="-1")
+            li: a(href="https://ru.wikipedia.org/wiki/Кривая_Безье") Выбор редакции
+            li: a(href="http://bookash.pro/ru/book/186003/vysshaya-matematika-zadachnik-e-a-rovba") На каждый день
         li: a(onclick="M.toast({html: 'Ваша консультация!'})").link Получить консультацию
   ul#mobile-slide.sidenav
     li: a.link(href="https://vk.com/kyzinatr") Уйти с сайта
     li: a.link(href="https://rt.pornhub.com") Свалить поскорее
+    li
+      a.link(href="#" class='dropdown-trigger', data-target='triggerLeave2') Другие варианты
+      ul#triggerLeave2.dropdown-content
+        li: a(href="https://rt.pornhub.com") Default
+        li: a(href="https://checkporno.com") На любителя
+        li.divider(tabindex="-1")
+        li: a(href="http://gayporka.top/home/") Совсем на любителя
+        li.divider(tabindex="-1")
+        li: a(href="https://ru.wikipedia.org/wiki/Кривая_Безье") Выбор редакции
+        li: a(href="http://bookash.pro/ru/book/186003/vysshaya-matematika-zadachnik-e-a-rovba") На каждый день
     li: a(onclick="M.toast({html: 'Ваша консультация!'})").link Получить консультацию
-
   form(action=`/add`, method="POST").form
     .input-field.form__input
       input(id="name" name="name" type="text" value=`${name}`)
@@ -24,6 +43,30 @@ body
       i.material-icons.prefix mode_edit
       textarea(id="content"  name="content" class="materialize-textarea")
       label(for="content") Распишите подробнее
+    .input-field.from__text-area
+      input(id="contacts" name="contacts" type="text" value="")
+      label(for="contacts") Ваши контакты, позвольте с вами связаться
     button.form__btn.btn.waves-effect.waves-light(type="submit" name="action") ОТПРАВИТЬ ПРЕДЪЯВУ <i class="material-icons right">send</i>
-
+  hr
+  .about
+    h1.logo.center-align.grey-text.text-darken-4 Почему мы?
+    .cards
+      .card
+        .card-image
+          img(src="team.png")
+        .card-content
+          p.
+            Грамотная техническая поддержка, которая всегда ответит на вашу предьяву.
+            Мы работаем над тем, чтобы вам было комфортно <i class="material-icons">tag_faces</i>
+        .card-action
+          a.teal-text.text-lighten-2#top_link(href="#") Напиши нам скорее!
+        .cards
+      .card
+        .card-image
+          img(src="fb.jpg")
+        .card-content
+          p.
+            Ценные рекомендации и тысячи открытых отзывов позволяют быть нам 1 в своей сфере
+        .card-action
+          a.teal-text.text-lighten-2#top_link(href="./list") Тысячи честных отзывов!
   include modules/scripts

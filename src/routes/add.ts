@@ -10,6 +10,7 @@ router.post("/", (req, res) => {
 		name: body.name,
 		reason: body.reason,
 		content: body.content,
+		contacts: body.contacts,
 		date: Date.now(),
 	});
 	res.render("add", {

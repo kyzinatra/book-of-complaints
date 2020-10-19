@@ -7,6 +7,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin-top: 2rem;
+	margin-bottom: 5rem;
 }
 .form__input {
 	width: 40%;
@@ -49,4 +50,11 @@
 }
 .card .card-content .card-p {
 	margin-top: 2rem;
+}
+
+.logo {
+	text-transform: uppercase;
+}
+.about {
+	margin-top: 5rem;
 }

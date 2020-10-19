@@ -2,5 +2,11 @@ export interface data {
 	name: string;
 	reason: string;
 	content: string;
-	date?: number;
+	contacts: string;
+	date?: number | Date;
+}
+
+export interface IInfo {
+	name?: string;
+	reason?: string;
 }
